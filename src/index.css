@@ -5,9 +5,76 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+.disable_scroll {
+  overflow: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1,h2{
+  margin: 0;
+}
+
+
+.navigation {
+  display: flex;
+  align-items: center;
+  padding: 2em 0 3.2em;
+  margin: 0 4em;
+}
+.navigation a {
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 1.5em;
+}
+.login_page{
+  margin: 0 64px 0;
+}
+.about_page{
+  margin: 0 64px 0;
+} 
+
+.login_prompt_container{
+  display: grid;
+  place-content: center;
+  position: fixed;
+  background-color: rgba(130, 130, 130, 0.358);
+  width: 100vw;
+  height: 100vh;
+}
+.login_prompt_modal{
+  background-color: #fff;
+  padding: 3em 5em 5em;
+  border-radius: 20px;
+}
+
+.login_prompt_form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+.login_prompt_label{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+.login_prompt_input{
+  margin-left: 2em;
+}
+.login_prompt_buttons{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+.login_prompt_button {
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 5px 7px;
 }
